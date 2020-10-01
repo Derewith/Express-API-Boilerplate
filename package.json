@@ -13,6 +13,7 @@
     "production": "NODE_ENV=production node ./build/main.js",
     "build": "backpack build",
     "start": "backpack",
+    "dev": "backpack dev",
     "sucrase": "sucrase ./src -d ./dist --transforms imports",
     "docker": "docker-compose -f stack.yml up -d",
     "logs": "docker logs -f node_api_boilerplate",
@@ -44,6 +45,7 @@
   "dependencies": {
     "babel-eslint": "^8.2.2",
     "body-parser": "^1.15.2",
+    "codice-fiscale-js": "^2.3.6",
     "cors": "^2.7.1",
     "dotenv": "^4.0.0",
     "express": "^4.14.0",
@@ -53,7 +55,8 @@
     "lodash": "^4.14.1",
     "mongoose": "^4.5.7",
     "morgan": "^1.9.0",
-    "mysql": "^2.15.0"
+    "mysql": "^2.15.0",
+    "nodemon": "^2.0.4"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
